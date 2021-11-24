@@ -1,8 +1,16 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import Home from './pages/Home';
+import Color from './pages/Color';
+
 const App = () => {
   return (
-    <div>
-      <p>Hello, world.</p>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/:hex" element={<Color />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 
