@@ -7,14 +7,14 @@ import Color from './pages/Color';
 
 const App = () => {
   return (
-    <Layout>
-      <BrowserRouter>
+    <BrowserRouter>
+      <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/:hex" element={<Color />} />
         </Routes>
-      </BrowserRouter>
-    </Layout>
+      </Layout>
+    </BrowserRouter>
   );
 };
 
